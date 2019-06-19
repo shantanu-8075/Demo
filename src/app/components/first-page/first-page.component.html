@@ -1,3 +1,14 @@
-<p>
-  first-page works!
-</p>
+<form >
+    <div class="form-group" class="pt-3">
+        <label for="UserName" class="float-left">User-Name</label>
+        <input type="text" class="form-control" name="userName" [(ngModel)]="newUser.userName" required>
+    </div>
+    <div class="form-group">
+        <label for="Password"  class="float-left">Password</label>
+        <input type="password" name="Password" class="form-control" [(ngModel)]="newUser.password" required >
+    </div>
+    <input type="submit" value="Register" (click)="onSubmit()" class="btn btn-primary mb-3">
+</form>
+<div>
+    <p>Hello {{ response | json}}</p>
+</div>
